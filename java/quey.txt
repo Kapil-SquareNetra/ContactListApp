@@ -1,0 +1,70 @@
+client ID: 34579305914-gh2nr9qhsc6ndc5cbip3d9prb2boiu5s.apps.googleusercontent.com
+
+client ID: vWyTA9ou-vstVIEFYEqbp06X
+
+
+Bottom Navigation view implementation - 29th Jan
+Shared Preference - 29th Jan
+Modes in shared preference - 30th Jan
+Splash screen - 3rd Feb
+Dialog box - 3rd Feb
+Gradle - 3rd Feb
+Ripple Animation - 3rd Feb
+Activity transition animation - 3rd Feb
+Google Auth- Login/ Logout operations - 3rd Feb
+Listen for changes in Shared preference - 3rd Feb
+People API- Google contacts import - 7th Feb
+CRUD operations - 14th Feb
+Services in Android - 17th Feb
+AsyncTask - 18th Feb
+Types of Services - 18th Feb
+
+
+Permissions handling - 27th Feb
+Content Resolver- 27th Feb
+Work Manager- 27th Feb
+Notification Manager -2nd march
+Fast Scroller in Recycler View- 2nd March
+Retrofit API fetch- 9th march
+Timer - 11th March
+View Pager - 16th March
+
+
+Tasks-
+Contact application Google and Phone Sync -27th Feb
+Image addition for contacts from camera and gallery - 27th Feb
+Search Operation in contact application- 2nd march
+Questionnaire Application - 9th march
+
+
+
+https://opentdb.com/api_config.php
+
+
+QuestionID
+CandidateId
+Question
+Correct Answer
+Incorrect Answer 1
+Incorrect Answer 2
+Incorrect Answer 3
+User selection
+
+
+CandidateID
+CandidateName
+CandidateEmail
+CandidatePhone
+
+
+
+7550056113
+
+ 5. Candidates can move to the required question using the Next and Previous button
+        located at the left and right bottom corners of the screen.
+
+
+
+
+
+
