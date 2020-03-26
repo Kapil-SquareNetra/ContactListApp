@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/cltBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarCollapsedStyle"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarExpandedStyle"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Name">
+            <!--android:transitionName="sharedContactName"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDisp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_person"
+
+                    >
+                    <!-- android:transitionName="sharedContactImg"-->
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/txtDispName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text=""
+                    android:textColor="@color/text"
+                    android:textSize="40sp"></TextView>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/colorAccent"></androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/layoutPhone"
+                    style="@style/DisplayLayoutStyle"
+                    android:layout_weight="90"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txtPhoneTitle"
+                        style="@style/DisplayTitleStyle"
+                        android:text="Phone">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtPhoneNumber"
+                        style="@style/DisplayValueStyle"
+                        android:text="txt">
+                    </TextView>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCall"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="10"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEmail"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    android:id="@+id/txtEmailTitle"
+                    style="@style/DisplayTitleStyle"
+                    android:text="Email"></TextView>
+
+                <TextView
+                    android:id="@+id/txtEmailID"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAddress"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    android:id="@+id/txtAddressTitle"
+                    style="@style/DisplayTitleStyle"
+                    android:text="Address"></TextView>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutIM"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    android:id="@+id/txtIMTitle"
+                    style="@style/DisplayTitleStyle"
+                    android:text="IM"></TextView>
+
+                <TextView
+                    android:id="@+id/txtIMID"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutImpDates"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    android:id="@+id/txtImpDatesTitle"
+                    style="@style/DisplayTitleStyle"
+                    android:text="Dates"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDates"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCircle"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    android:id="@+id/txtCircleTitle"
+                    style="@style/DisplayTitleStyle"
+                    android:text="Email"></TextView>
+
+                <TextView
+                    android:id="@+id/txtCircleName"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPhoneticName"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="PhoneticName"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispPhoneticName"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNickName"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="NickName"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispNickName"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCompany"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="Company"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispCompany"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTitle"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="Title"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispTitle"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWebsite"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="Website"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispWebsite"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNotes"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="Notes"></TextView>
+
+                <TextView
+                    android:id="@+id/txtDispNotes"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGroup"
+                style="@style/DisplayLayoutStyle">
+
+                <TextView
+                    style="@style/DisplayTitleStyle"
+                    android:text="Group"></TextView>
+
+                <TextView
+                    android:id="@+id/txtGroupName"
+                    style="@style/DisplayValueStyle"
+                    android:text="txt"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

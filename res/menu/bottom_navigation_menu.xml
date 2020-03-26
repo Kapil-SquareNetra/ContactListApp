@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Contacts"
+        android:id="@+id/navAllContacts"
+        android:icon="@drawable/ic_people"
+        />
+    <item android:title="Test"
+        android:id="@+id/navTestRegistration"
+        android:icon="@drawable/ic_question_answer"
+        />
+    <item android:title="More"
+        android:id="@+id/navSettings"
+        android:icon="@drawable/ic_more"
+        />
+
+
+</menu>

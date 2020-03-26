@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parentLWStyle"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_person">
+
+                </ImageView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:backgroundTint="@color/colorAccent"
+                    android:src="@drawable/ic_camera">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Add Contact"
+                app:titleTextColor="@color/colorPrimaryDark">
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/parentLWStyle"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    >
+
+       <LinearLayout
+            style="@style/parentLWStyle"
+            android:orientation="vertical"
+            >
+
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtName"
+                   android:hint="Name"
+
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtPhoneticName"
+                   android:hint="Phonetic Name"
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtNickName"
+                   android:hint="NickName"
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtCompany"
+                   android:hint="Company"
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtTitle"
+                   android:hint="Title"
+
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <Spinner
+                    android:id="@+id/spnPhone"
+                    style="@style/smallSpinnerStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    >
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    style="@style/smallFieldsStyle"
+                    android:hint="Phone"
+                    android:layout_toRightOf="@id/spnPhone"
+                    android:inputType="phone"
+                    >
+                </EditText>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:id="@+id/spnEmail"
+                    style="@style/smallSpinnerStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    >
+                </Spinner>
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/smallFieldsStyle"
+                    android:hint="Email"
+                    android:layout_toRightOf="@id/spnEmail"
+                    android:inputType="textEmailAddress"
+                    >
+                </EditText>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:id="@+id/spnAddress"
+                    style="@style/smallSpinnerStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    >
+                </Spinner>
+                <EditText
+                    android:id="@+id/edtAddress"
+                    style="@style/smallFieldsStyle"
+                    android:hint="Address"
+                    android:layout_toRightOf="@id/spnAddress"
+                    android:inputType="text"
+                    >
+                </EditText>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:id="@+id/spnIM"
+                    style="@style/smallSpinnerStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    >
+                </Spinner>
+                <EditText
+                    android:id="@+id/edtIM"
+                    style="@style/smallFieldsStyle"
+                    android:hint="IM"
+                    android:layout_toRightOf="@id/spnIM"
+                    android:inputType="textEmailAddress"
+                    >
+                </EditText>
+
+            </RelativeLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtWebsite"
+                   android:hint="Website"
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <Spinner
+                   android:id="@+id/spnBday"
+                   style="@style/smallSpinnerStyle"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   >
+               </Spinner>
+               <EditText
+                   android:id="@+id/edtBday"
+                   style="@style/smallFieldsStyle"
+                   android:hint="Date"
+                   android:layout_toRightOf="@id/spnBday"
+                   android:inputType="date"
+                   >
+               </EditText>
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <Spinner
+                   android:id="@+id/spnCircle"
+                   style="@style/smallSpinnerStyle"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   >
+               </Spinner>
+               <EditText
+                   android:id="@+id/edtCircle"
+                   style="@style/smallFieldsStyle"
+                   android:hint="Relationship"
+                   android:layout_toRightOf="@id/spnCircle"
+                   android:inputType="text"
+                   >
+               </EditText>
+
+           </RelativeLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/hint"
+               >
+               <com.google.android.material.textfield.TextInputEditText
+                   style="@style/fieldStyle"
+                   android:id="@+id/edtNotes"
+                   android:hint="Notes"
+                   android:maxLines="200"
+                   android:inputType="text"
+                   >
+               </com.google.android.material.textfield.TextInputEditText>
+
+           </com.google.android.material.textfield.TextInputLayout>
+           <Spinner
+               style="@style/spinnerStyle"
+               android:id="@+id/spnGroup"
+               android:layout_marginBottom="16dp"
+               >
+           </Spinner>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

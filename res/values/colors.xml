@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <!--<color name="colorPrimaryDark">#1976D2</color>-->
+    <!--<color name="colorAccent">#009688</color>-->
+
+    <color name="colorPrimaryDark">#00BCD4</color>
+    <color name="colorAccent">#00BCD4</color>
+
+    <color name="text">#000000</color>
+    <color name="hint">#C2C2C2</color>
+
+    <color name="circleYellow">#f1c40f</color>
+    <color name="circleRed">#c0392b</color>
+    <color name="circleGreen">#2ecc71</color>
+
+    <color name="splashTextPurple">#7C4DFF</color>
+
+
+
+
+</resources>

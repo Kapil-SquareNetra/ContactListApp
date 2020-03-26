@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbQuestionnaire"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:title="Questionnaire"
+            app:titleTextColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtQuestion1"
+                style="@style/QuestionLabelStyle"
+                android:text="1"
+
+                />
+
+            <TextView
+                android:id="@+id/txtQuestion2"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/txtQuestion3"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/txtQuestion4"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/txtQuestion5"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/txtQuestion6"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/txtQuestion7"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/txtQuestion8"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/txtQuestion9"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/txtQuestion10"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtQuestion11"
+                style="@style/QuestionLabelStyle"
+                android:text="11"
+
+                />
+
+            <TextView
+                android:id="@+id/txtQuestion12"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/txtQuestion13"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="13" />
+
+            <TextView
+                android:id="@+id/txtQuestion14"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="14" />
+
+            <TextView
+                android:id="@+id/txtQuestion15"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="15" />
+
+            <TextView
+                android:id="@+id/txtQuestion16"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="16" />
+
+            <TextView
+                android:id="@+id/txtQuestion17"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="17" />
+
+            <TextView
+                android:id="@+id/txtQuestion18"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="18" />
+
+            <TextView
+                android:id="@+id/txtQuestion19"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="19" />
+
+            <TextView
+                android:id="@+id/txtQuestion20"
+                style="@style/QuestionLabelStyle"
+                android:layout_marginLeft="2dp"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAnswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Attended: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUnAnswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Un Attended: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/questionaireTitleTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question:" />
+
+            <TextView
+                android:id="@+id/txtQuestionNo"
+                style="@style/questionaireTitleTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No." />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            style="@style/questionTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:maxHeight="80dp"
+            android:scrollbars="vertical"
+            android:text="Question??" />
+
+        <TextView
+            style="@style/questionaireTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer:" />
+
+        <RadioGroup
+            android:id="@+id/rgAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAnswer1"
+                style="@style/AnswerRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="a" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAnswer2"
+                style="@style/AnswerRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="b" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAnswer3"
+                style="@style/AnswerRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="c" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAnswer4"
+                style="@style/AnswerRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="d" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPreviousQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:background="@color/colorAccent"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btnNextQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

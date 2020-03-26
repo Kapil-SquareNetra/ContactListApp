@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    >
+
+ <!--   <GridView
+        android:layout_marginTop="15dp"
+        android:id="@+id/avatarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:numColumns="auto_fit"
+        android:background="@color/colorPrimary"
+        />-->
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:text="Take Photo"
+        style="@style/LargeButtonStyle"
+        android:layout_marginTop="16dp"
+        />
+    <Button
+        android:id="@+id/btnGallery"
+        android:text="Import From Gallery"
+        style="@style/LargeButtonStyle"
+        android:layout_marginTop="16dp"
+
+        />
+    <Button
+        android:id="@+id/btnCancelImport"
+        android:text="Cancel"
+        style="@style/LargeButtonStyle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+</LinearLayout>

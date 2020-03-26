@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ContactListApp</string>
+
+    <string name="loginText">Already have an account? <b><u>Sign in</u></b>.</string>
+    <string name="signUpText">Not a member yet? <b><u>Sign Up</u></b>.</string>
+
+    <string name="title_activity_seach_">Seach_Activity</string>
+
+    <string name="client_ID">55168313481-4oh89vlsg74okdrnbcuslhrcdljbsuj5.apps.googleusercontent.com</string>
+    <string name="clientSecret">eOhxXP47rLBlJ_EXr_7c12ag</string>
+
+    <string name="webClientSecret">eOhxXP47rLBlJ_EXr_7c12ag</string>
+    <string name="webClientID">355168313481-4oh89vlsg74okdrnbcuslhrcdljbsuj5.apps.googleusercontent.com</string>
+
+    <string name="InstructionsPartOne">
+        1. Click Begin Test on Bottom of the screen to begin test.
+        \n\n2. There are 20 questions in total, all questions are subjected for evaluation.
+        \n\n3. The timer at the top corner will display the time left for the closure of the test.
+        \n\n4. The Question Numbers are color coded as follows:
+    </string>
+
+    <string name="InstructionsPartTwo">
+        5. Do not click the final Submit button on the right Corner unless you are finished with the test.
+        \n\n7. Score obtained will be displayed immediately after the test.
+    </string>
+</resources>

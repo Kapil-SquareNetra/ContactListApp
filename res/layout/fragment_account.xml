@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="User Account Details"
+        app:titleTextColor="@color/colorPrimary"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgAccountDisp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/hero"
+        android:scaleType="centerInside"
+        >
+    </androidx.appcompat.widget.AppCompatImageView>
+    <TextView
+        style="@style/DisplayTitleStyle"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtAccountUserNameTag"
+        android:onClick="dummyClick"
+        android:background="?attr/selectableItemBackground"
+        android:text="User Name">
+    </TextView>
+    <TextView
+        android:id="@+id/txtAccountUserName"
+        android:layout_marginTop="16dp"
+        style="@style/DisplayValueStyle"
+        android:onClick="dummyClick"
+        android:background="@drawable/customripplewithborder"
+        android:text="naam">
+    </TextView>
+    <TextView
+        style="@style/DisplayTitleStyle"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtAccountEmailTag"
+        android:onClick="dummyClick"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:text="Email ">
+    </TextView>
+    <TextView
+        android:id="@+id/txtAccountEmail"
+        android:layout_marginTop="16dp"
+        style="@style/DisplayValueStyle"
+        android:onClick="dummyClick"
+        android:background="@drawable/customripplewithoutborder"
+        android:text="emale">
+    </TextView>
+
+
+</LinearLayout>
